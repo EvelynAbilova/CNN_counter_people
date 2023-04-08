@@ -1,6 +1,6 @@
 # CNN_counter_people
 
-Набор данных и сохраненная модель .h5:
+Набор данных:
 https://drive.google.com/drive/folders/1yEZzwlfu_8sxr2gIeyqx9flSD85kpNpV?usp=sharing
 
 Test loss, test MAE, MAE, MSE, Relative error:
