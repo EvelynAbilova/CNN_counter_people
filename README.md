@@ -3,10 +3,10 @@
 Набор данных и сохраненная модель .h5:
 https://drive.google.com/drive/folders/1yEZzwlfu_8sxr2gIeyqx9flSD85kpNpV?usp=sharing
 
-test loss & test MAE:
+Test loss, test MAE, MAE, MSE, Relative error:
 
-![image](https://user-images.githubusercontent.com/79151653/230483627-231ff32a-61cb-43f0-92c1-82a524e4c05e.png)
+![image](https://user-images.githubusercontent.com/79151653/230718859-6b923c2a-05eb-4a42-a6b1-4523e004391f.png)
 
-![image](https://user-images.githubusercontent.com/79151653/230483770-ea8be2bf-a197-440f-9b45-d3f925c3512b.png)
+![image](https://user-images.githubusercontent.com/79151653/230719848-89cab6ef-15b7-43be-81b2-1fa4538f247e.png)
 
 
