@@ -19,7 +19,7 @@ labels_df = pd.read_csv(labels_file)
 model = tf.keras.models.load_model("cnn_people_counter.h5")
 
 # Load and preprocess the test image
-test_image_path = os.path.join(frames_dir, "seq_000720.jpg")
+test_image_path = os.path.join(frames_dir, "seq_000001.jpg")
 test_image = cv2.imread(test_image_path)
 test_image = cv2.cvtColor(test_image, cv2.COLOR_BGR2RGB)
 test_image = cv2.resize(test_image, (256, 256)) / 255.0
@@ -42,21 +42,21 @@ plt.show()
 print(f"Predicted count: {predicted_count}, Actual count: {count}")
 
 # Evaluate the model on a test set
-# test_dataset = data_gen.data_generator(batch_size=8)
-# test_steps = len(labels_df) // 8
-# test_loss, test_mae = model.evaluate(test_dataset, steps=test_steps)
+test_dataset = data_gen.data_generator(batch_size=8)
+test_steps = len(labels_df) // 8
+test_loss, test_mae = model.evaluate(test_dataset, steps=test_steps)
 
 # Compute the predictions on the test set
-# y_true = np.concatenate([next(test_dataset)[1] for i in range(test_steps)])
-# y_pred = model.predict(test_dataset, steps=test_steps).flatten()
+y_true = np.concatenate([next(test_dataset)[1] for i in range(test_steps)])
+y_pred = model.predict(test_dataset, steps=test_steps).flatten()
 
 # Compute the metrics
-# mae = mean_absolute_error(y_true, y_pred)
-# mse = mean_squared_error(y_true, y_pred)
-# relative_error = mae / np.mean(y_true) * 100
-#
-# print(f"Test loss: {test_loss:.4f}")
-# print(f"Test MAE: {test_mae:.4f}")
-# print(f"MAE: {mae:.4f}")
-# print(f"MSE: {mse:.4f}")
-# print(f"Relative Error: {relative_error:.2f}%")
+mae = mean_absolute_error(y_true, y_pred)
+mse = mean_squared_error(y_true, y_pred)
+relative_error = mae / np.mean(y_true) * 100
+
+print(f"Test loss: {test_loss:.4f}")
+print(f"Test MAE: {test_mae:.4f}")
+print(f"MAE: {mae:.4f}")
+print(f"MSE: {mse:.4f}")
+print(f"Relative Error: {relative_error:.2f}%")
