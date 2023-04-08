@@ -11,7 +11,7 @@ labels_file = "MALL/labels.csv"
 labels_df = pd.read_csv(labels_file)
 
 # Define a data generator to load and preprocess images
-def data_generator(batch_size=32):
+def data_generator(batch_size=8):
     while True:
         # Shuffle the dataset
         shuffled_df = labels_df.sample(frac=1)
