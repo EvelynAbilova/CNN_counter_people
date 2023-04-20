@@ -7,4 +7,4 @@ Test loss, test MAE, MAE, MSE, Relative error:
 
 ![image](https://user-images.githubusercontent.com/79151653/230731687-e93fc00d-7717-46bf-8f73-7b26fa83ff6f.png)
 
-![Figure_1](https://user-images.githubusercontent.com/79151653/230731658-489e59df-5c67-43ff-9ad6-51e0bdc9ef63.png)
+![Best and Worst score](https://user-images.githubusercontent.com/79151653/233460208-05b67559-9fbc-4d2b-9d8b-e89c73b96855.png)
