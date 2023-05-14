@@ -7,7 +7,8 @@ Test loss, test MAE, MAE, MSE, Relative error:
 
 ![image](https://user-images.githubusercontent.com/79151653/230731687-e93fc00d-7717-46bf-8f73-7b26fa83ff6f.png)
 
-![Best and Worst score](https://user-images.githubusercontent.com/79151653/233460208-05b67559-9fbc-4d2b-9d8b-e89c73b96855.png)
+![image](https://github.com/EvelynAbilova/CNN_counter_people/assets/79151653/3054342d-83a4-43e4-885e-d7a542abf1b1)
+
 
 
 
